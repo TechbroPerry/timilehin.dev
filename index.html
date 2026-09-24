@@ -1,710 +1,450 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timilehin Akindipe — Creative Visual Designer</title>
-  <meta name="description" content="Creative Visual Designer / Brand Designer — portfolio résumé of Timilehin Akindipe." />
+  <title>Timilehin Akindipe — Front-End Developer</title>
+  <meta name="description" content="Front-End Developer and Web Designer. I build clean, responsive, accessible websites with HTML, CSS and JavaScript." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Space+Grotesk:ital,wght@0,400;0,500;0,700;1,700&family=Archivo:ital,wght@0,600;0,800;1,800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:ital,wght@0,600;0,700;0,800;1,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/developer.css" />
 </head>
-<body>
+<body class="dev">
 
-  <!-- ============ NAVIGATION ============ -->
-  <nav class="nav" aria-label="Primary">
-    <div class="nav__inner">
-      <a class="nav__brand" href="#poster">OLUWATIMILEHIN AKINDIPE</a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
+  <!-- ============ NAV ============ -->
+  <nav class="dev-nav" id="devNav" aria-label="Primary">
+    <div class="dev-nav__inner">
+      <a class="dev-nav__brand" href="#top">timilehin<span class="dev-nav__brand-dot">.dev</span></a>
+      <button class="dev-nav__toggle" id="devNavToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="devNavMenu">
+        <span class="dev-nav__toggle-bar"></span>
+        <span class="dev-nav__toggle-bar"></span>
+        <span class="dev-nav__toggle-bar"></span>
       </button>
-      <ul class="nav__links" id="navMenu">
-<li><a class="nav__link" href="welcome.html">Home</a></li>
-        <li><a class="nav__link" href="#skills">Skills</a></li>
-        <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
-        <li><a class="nav__link" href="#about">About</a></li>
-<li><a class="nav__link" href="#contact">Contact</a></li>
-<li><a class="nav__link" href="developer.html" aria-label="View my Front-End Developer page">Web Dev</a></li>
+      <ul class="dev-nav__menu" id="devNavMenu">
+        <li><a class="dev-nav__link" href="#about">About</a></li>
+        <li><a class="dev-nav__link" href="#experience">Experience</a></li>
+        <li><a class="dev-nav__link" href="#skills">Skills</a></li>
+        <li><a class="dev-nav__link" href="#projects">Projects</a></li>
+        <li><a class="dev-nav__link" href="#contact">Contact</a></li>
+        <li><a class="dev-nav__creative" href="welcome.html">Creative Portfolio&nbsp;&nearr;</a></li>
       </ul>
-    </div>
-    <div class="ticker" aria-label="REQUEST/BOOK ME NOW!">
-      <div class="ticker__track"><span class="ticker__copy">REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;</span><span class="ticker__copy" aria-hidden="true">REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;REQUEST/BOOK ME NOW!&nbsp;&nbsp;&#10022;&nbsp;&nbsp;</span></div>
     </div>
   </nav>
 
-  <div class="poster" id="poster">
+  <main id="top">
 
-    <!-- ============ MAIN TITLE ============ -->
-    <header class="hero" data-reveal>
-      <span class="hero__my">MY</span>
-      <h1 class="hero__title">RESUME</h1>
-      <svg class="hero__sparkle sparkle--a" viewBox="0 0 40 40" aria-hidden="true">
-        <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/>
-      </svg>
-<svg class="hero__sparkle sparkle--b" viewBox="0 0 40 40" aria-hidden="true">
-        <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/>
-      </svg>
-    </header>
-
-    <!-- ============ LEFT GRADIENT "NEW" GRAPHIC ============ -->
-    <aside class="new-graphic" data-reveal>
-      <div class="new-graphic__shape" aria-hidden="true">
-        <svg class="new-graphic__svg" viewBox="0 0 128 330" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="newGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ff5e9c"/>
-              <stop offset="0.25" stop-color="#ffe600"/>
-              <stop offset="0.45" stop-color="#00e5ff"/>
-              <stop offset="0.65" stop-color="#7b5cff"/>
-              <stop offset="0.85" stop-color="#00c48c"/>
-              <stop offset="1" stop-color="#ff5e9c"/>
-            </linearGradient>
-          </defs>
-          <path fill="url(#newGrad)" d="M64 4
-            C 120 4, 128 44, 128 74
-            C 128 96, 100 110, 96 138
-            C 90 168, 90 196, 96 226
-            C 100 252, 128 262, 128 286
-            C 128 316, 118 326, 64 326
-            C 10 326, 0 316, 0 286
-            C 0 262, 28 252, 32 226
-            C 38 196, 38 168, 32 138
-            C 28 110, 0 96, 0 74
-            C 0 44, 8 4, 64 4 Z"/>
-          <circle cx="64" cy="165" r="34" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="3 6" opacity="0.85"/>
-        </svg>
-        <span>NEW</span>
-        <span>NEW</span>
-        <span>NEW</span>
-      </div>
-      <p class="new-graphic__script">I am Perry</p>
-      <svg class="new-graphic__arrow" viewBox="0 0 220 160" aria-hidden="true">
-        <path d="M10 140 C 60 150, 130 130, 170 60" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-        <path d="M150 70 L172 52 L176 82" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </aside>
-
-    <!-- ============ PROFILE / RÉSUMÉ CARD ============ -->
-    <section class="profile-card" id="about" data-reveal>
-      <div class="sticker sticker--hi" aria-hidden="true">Hi!</div>
-
-      <div class="profile-card__photo">
-        <img src="assets/portrait.png" alt="Portrait of Timilehin Akindipe" />
-      </div>
-
-      <div class="profile-card__info">
-        <p class="profile-card__brand">TIMILEHIN AKINDIPE<sup>TM</sup></p>
-        <p class="profile-card__role">CREATIVE VISUAL DESIGNER / BRAND DESIGNER</p>
-<p class="profile-card__bio">
-          Creative and detail-oriented graphic designer with 7+ years of experience in
-          branding, digital illustration, and UI/UX design. Skilled in transforming concepts
-          into visually compelling designs that drive engagement and brand recognition.
-          Passionate about blending creativity with functionality to deliver impactful solutions.
-        </p>
-
-        <div class="contact-box">
-          <div class="contact-box__row">
-            <span class="contact-box__label">E-Mail</span>
-            <a class="contact-box__value" href="mailto:perryakindipetimilehin@gmail.com">perryakindipetimilehin@gmail.com</a>
-          </div>
-          <div class="contact-box__row">
-            <span class="contact-box__label">Phone No.</span>
-            <a class="contact-box__value" href="tel:+2349049714495">+234 904 971 4495</a>
+    <!-- ============ HERO ============ -->
+    <section class="dev-hero">
+      <div class="dev-hero__inner">
+        <div class="dev-hero__content" data-reveal>
+          <span class="dev-hero__tag"><span class="dev-hero__pulse"></span>Available for work</span>
+          <h1 class="dev-hero__name">
+            <span class="dev-hero__name-line">Oluwatimilehin</span>
+            <span class="dev-hero__name-line dev-hero__name-line--blue">Akindipe</span>
+          </h1>
+          <p class="dev-hero__role">
+            <span class="dev-hero__role-bracket">&lang;</span> Front&#8209;End Developer &amp; Web Designer <span class="dev-hero__role-bracket">&rang;</span>
+          </p>
+          <p class="dev-hero__intro">
+            I turn ideas into clean, responsive, accessible websites. A creative&#8209;yet&#8209;technical developer
+            who bridges design and code — building with HTML, CSS and JavaScript, adding Python for scripting
+            and automation, and translating Figma concepts into production&#8209;ready interfaces.
+          </p>
+          <div class="dev-hero__actions">
+            <a class="dev-btn dev-btn--solid" href="#projects">View Projects</a>
+            <a class="dev-btn dev-btn--ghost" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <div class="profile-card__bottom">
-          <ul class="socials" aria-label="Social links">
-            <li>
-              <a href="#" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.3-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21H9z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:perryakindipetimilehin@gmail.com" aria-label="Email">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/2349049714495" target="_blank" rel="noopener" aria-label="WhatsApp">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.8-4.3-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.5.6c-.1.1-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.1.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/timilehperrya" target="_blank" rel="noopener" class="socials__be" aria-label="Behance">Be</a>
-            </li>
-          </ul>
-
-          <div class="qr-code" role="img" aria-label="QR code linking to portfolio">
-            <img src="assets/qr.svg" alt="" />
+        <div class="dev-code" data-reveal aria-hidden="true">
+          <div class="dev-code__bar">
+            <span class="dev-code__dot dev-code__dot--r"></span>
+            <span class="dev-code__dot dev-code__dot--y"></span>
+            <span class="dev-code__dot dev-code__dot--g"></span>
+            <span class="dev-code__url">~/timilehin.dev</span>
+          </div>
+          <div class="dev-code__body">
+            <div class="dev-code__line"><span class="dev-code__num">1</span><span><span class="dev-code__cmt">// front-end developer · web designer</span></span></div>
+            <div class="dev-code__line"><span class="dev-code__num">2</span><span><span class="dev-code__kw">const</span> <span class="dev-code__txt">stack</span> = [</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">3</span><span>&nbsp;&nbsp;<span class="dev-code__str">"HTML"</span>, <span class="dev-code__str">"CSS"</span>, <span class="dev-code__str">"JavaScript"</span>,</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">4</span><span>&nbsp;&nbsp;<span class="dev-code__str">"Figma"</span>, <span class="dev-code__str">"Responsive UI"</span></span></div>
+            <div class="dev-code__line"><span class="dev-code__num">5</span><span>];</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">6</span><span>&nbsp;</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">7</span><span><span class="dev-code__kw">function</span> <span class="dev-code__sel">build</span>(<span class="dev-code__txt">idea</span>) {</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">8</span><span>&nbsp;&nbsp;<span class="dev-code__kw">return</span> <span class="dev-code__sel">pixelPerfect</span>(<span class="dev-code__txt">idea</span>);</span></div>
+            <div class="dev-code__line"><span class="dev-code__num">9</span><span>}</span></div>
           </div>
         </div>
-      </div>
-
-      <div class="barcode barcode--profile" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </section>
 
-    <!-- ============ SOFTWARE STRIP ============ -->
-    <div class="tool-strip" data-reveal aria-label="Software tools">
-      <span class="tool tool--ai"><img src="assets/logo-ap.png" alt="Adobe Illustrator" /></span>
-      <span class="tool tool--ps"><img src="assets/logo-pp.png" alt="Adobe Photoshop" /></span>
-      <span class="tool tool--ae"><img src="assets/logo-ar.png" alt="Adobe After Effects" /></span>
-      <span class="tool tool--figma"><img src="assets/logo-f.png" alt="Figma" /></span>
-      <span class="tool tool--canva"><img src="assets/logo-c.png" alt="Canva" /></span>
-    </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="dev-section" id="about" data-reveal>
+      <span class="dev-section__eyebrow">01 · About</span>
+      <h2 class="dev-section__title">Design-minded. Code-ready.</h2>
 
-    <!-- ============ EDUCATION TICKET ============ -->
-    <article class="ticket" data-reveal aria-label="Education ticket">
-      <div class="ticket__body">
-        <p class="ticket__no">No. 11800109</p>
-        <hr class="ticket__dash" />
-
-        <div class="ticket__main">
-          <div class="ticket__text">
-            <p class="ticket__institute">NIGERIAN INSTITUTE<br />OF JOURNALISM</p>
-            <p class="ticket__field">JOURNALISM</p>
-            <p class="ticket__course">MASS COMMUNICATION</p>
-            <p class="ticket__focus">Graphic Design</p>
-          </div>
-          <div class="ticket__year">
-            <span class="ticket__year-sm">2022</span>
-            <span class="ticket__year-lg">2026</span>
-          </div>
+      <div class="dev-about__grid">
+        <div class="dev-about__text">
+          <p>
+            I'm a <strong>front&#8209;end developer and web designer</strong> with several years of hands&#8209;on
+            experience creating visual and digital content for individuals, businesses, and brands.
+            My work spans responsive websites, landing pages, web components, brand design, and
+            print, always built with clean semantics and attention to detail.
+          </p>
+          <p>
+            What sets me apart is a <strong>background in visual design</strong>: I understand how layout, typography,
+            and colour translate into digital experiences, which lets me think beyond individual pages and build
+            interfaces that feel cohesive across every screen.
+          </p>
+          <p>
+            I'm a creative, detail&#8209;oriented, and adaptable developer who enjoys solving visual problems
+            and bringing ideas to life, constantly learning, constantly improving.
+          </p>
         </div>
 
-        <hr class="ticket__dash" />
+        <div class="dev-facts">
+          <div class="dev-fact">
+            <span class="dev-fact__label">Role</span>
+            <span class="dev-fact__value">Front&#8209;End Developer / Web Designer</span>
+          </div>
+          <div class="dev-fact">
+            <span class="dev-fact__label">Experience</span>
+            <span class="dev-fact__value">2019 &mdash; Present</span>
+          </div>
+          <div class="dev-fact">
+            <span class="dev-fact__label">Education</span>
+            <span class="dev-fact__value">Nigerian Institute of Journalism &mdash; Mass Communication (2022&ndash;2026)</span>
+          </div>
+          <div class="dev-fact">
+            <span class="dev-fact__label">Email</span>
+            <span class="dev-fact__value"><a href="mailto:perryakindipetimilehin@gmail.com">perryakindipetimilehin@gmail.com</a></span>
+          </div>
+          <div class="dev-fact">
+            <span class="dev-fact__label">Phone</span>
+            <span class="dev-fact__value"><a href="tel:+2349049714495">+234 904 971 4495</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="ticket__footer">
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="dev-section" id="experience" data-reveal>
+      <span class="dev-section__eyebrow">02 · Experience</span>
+      <h2 class="dev-section__title">Freelance Web Developer &amp; Designer</h2>
+
+      <div class="dev-exp-list">
+        <article class="dev-exp">
+          <span class="dev-exp__period">2019 &mdash; Present</span>
           <div>
-            <p class="ticket__footer-label">EDUCATION</p>
-            <p class="ticket__footer-dates">2022–2026</p>
+            <h3 class="dev-exp__title">Front&#8209;End Development</h3>
+            <ul>
+              <li>Built and maintained responsive websites and landing pages with HTML, CSS, and JavaScript.</li>
+              <li>Translated Figma mockups and brand designs into clean, accessible, pixel&#8209;perfect interfaces.</li>
+              <li>Focused on performance, cross&#8209;browser behaviour, and mobile&#8209;first layouts.</li>
+            </ul>
           </div>
-          <div class="ticket__barcode" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </article>
+
+        <article class="dev-exp">
+          <span class="dev-exp__period">2019 &mdash; Present</span>
+          <div>
+            <h3 class="dev-exp__title">Brand &amp; Visual Design</h3>
+            <ul>
+              <li>Designed brand logos and identities that carry across web and print.</li>
+              <li>Created social media visuals, flyers, posters, and promotional materials.</li>
+              <li>Developed strong systems for reuse &mdash; design tokens, components, and consistent spacing.</li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </article>
+        </article>
 
-    <!-- ============ YELLOW TAPE STRIPS ============ -->
-    <div class="tape tape--skills" aria-hidden="true">DESIGN SKILLS · EDUCATION · DESIGN SKILLS · EDUCATION</div>
-    <div class="tape tape--side" aria-hidden="true">BRAND · IDENTITY · VISUALS</div>
-
-    <!-- ============ INTRODUCTION / EXPERIENCE ============ -->
-    <section class="exp-panel" data-reveal>
-      <div class="exp-panel__tools" aria-hidden="true">
-        <span class="badge">INTRODUCTION</span>
-      </div>
-
-<p class="exp-panel__intro">
-        A versatile technology and creative professional with hands-on experience in
-        graphic design, web development, branding, visual design, HTML/CSS/JavaScript,
-        and Wi-Fi/network troubleshooting.
-      </p>
-
-      <p class="exp-panel__intro exp-panel__intro--second">
-        However, as a Creative Visual Designer and Graphic Designer with several years of
-        hands-on experience creating visual content for individuals, businesses, and brands.
-        My work spans branding, logo design, social media graphics, print design, flyers,
-        posters, and promotional materials.
-      </p>
-
-      <p class="exp-panel__intro exp-panel__intro--third">
-        I'm passionate about turning ideas and concepts into visually compelling designs that
-        communicate clearly and connect with an audience. I have strong experience using
-        Adobe Photoshop and Canva, while also developing my skills in Figma and other
-        creative tools.
-      </p>
-
-      <p class="exp-panel__intro exp-panel__intro--fourth">
-        What also sets me apart is my background in web development. I understand how visual
-        design translates into digital experiences, which allows me to think beyond
-        individual graphics and consider how a brand should look and feel across different
-        platforms.
-      </p>
-
-      <p class="exp-panel__intro exp-panel__intro--fifth">
-        I'm a creative, detail-oriented, and adaptable designer who enjoys solving visual
-        problems and bringing ideas to life. I'm constantly looking for opportunities to
-        improve my craft, work on meaningful projects, and create designs that are both
-        visually strong and purposeful.
-      </p>
-
-      <div class="exp-panel__tools">
-        <span class="badge">EXPERIENCE</span>
-      </div>
-
-      <ul class="exp-panel__list">
-        <li><strong>2019 – Present:</strong> Designed brand logos and identities.</li>
-        <li><strong>2021 – Present:</strong> Created print designs (brochures, posters, packaging).</li>
-        <li><strong>2022 – Present:</strong> Developed social media visuals and motion graphics.</li>
-      </ul>
-
-      <hr class="rule" />
-
-      <h2 class="exp-panel__heading">Freelance Graphic Designer <em>(2019 – Present)</em></h2>
-
-      <ul class="exp-panel__bullets">
-        <li>Logo Design</li>
-        <li>Brand Design</li>
-        <li>Print Design</li>
-        <li>Social Media Graphics</li>
-      </ul>
-
-      <hr class="rule" />
-
-      <p class="exp-panel__now">2026 <span class="exp-panel__arrow">→</span> NOW</p>
-
-      <!-- Decorative Photoshop interface -->
-      <div class="ps-panel" aria-hidden="true">
-        <div class="ps-panel__bar">
-          <span></span><span></span><span></span>
-        </div>
-        <ul class="ps-panel__tools">
-          <li>◩</li><li>✎</li><li>⌖</li><li>▭</li><li>✚</li>
-          <li>◐</li><li>✂</li><li>⌘</li><li>T</li><li>◇</li>
-          <li>★</li><li>⁘</li>
-        </ul>
-        <div class="ps-panel__colors">
-          <span></span><span></span>
-        </div>
+        <article class="dev-exp">
+          <span class="dev-exp__period">2022 &mdash; Present</span>
+          <div>
+            <h3 class="dev-exp__title">Creative Tooling</h3>
+            <ul>
+              <li>Work across Figma, Adobe Photoshop, Illustrator, and Canva for design-to-code flows.</li>
+              <li>Comfortable iterating from wireframe to prototype to production styles.</li>
+              <li>Understand accessibility semantics, responsive behaviour, and smooth front&#8209;end interactions.</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- ============ SKILLS PANEL ============ -->
-    <section class="skills" id="skills" data-reveal>
-      <div class="skills__left">
-        <h2 class="skills__heading">Design Skills</h2>
-        <ul class="skills__icons">
-          <li>
-            <span class="skills__icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Zm0 0v18M4 7.5l8 4.5 8-4.5"/></svg>
-            </span>
-            <span class="skills__label">Logo Design</span>
-          </li>
-          <li>
-            <span class="skills__icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 4v16M4 12h16"/></svg>
-            </span>
-            <span class="skills__label">Brand Design</span>
-          </li>
-          <li>
-            <span class="skills__icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="14" width="16" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" d="M7 10v4h10v-4"/></svg>
-            </span>
-            <span class="skills__label">Print Design</span>
-          </li>
-        </ul>
-      </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="dev-section" id="skills" data-reveal>
+      <span class="dev-section__eyebrow">03 · Skills</span>
+      <h2 class="dev-section__title">What I work with</h2>
 
-      <div class="skills__right">
-        <div class="skills__badges" aria-label="Software proficiency">
-          <span class="skills__badge">Ps</span>
-          <span class="skills__badge">Ai</span>
-          <span class="skills__badge">Ae</span>
+      <div class="dev-skills__grid">
+        <div class="dev-skill">
+          <span class="dev-skill__tag">ll</span>
+          <p class="dev-skill__name">HTML5</p>
+          <p class="dev-skill__desc">Semantic, accessible structure.</p>
         </div>
-        <p class="skills__word">Skills<sup>®</sup></p>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">#</span>
+          <p class="dev-skill__name">CSS3</p>
+          <p class="dev-skill__desc">Flexbox, Grid, responsive layouts.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">js</span>
+          <p class="dev-skill__name">JavaScript</p>
+          <p class="dev-skill__desc">Interactions, DOM, vanilla JS.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">py</span>
+          <p class="dev-skill__name">Python</p>
+          <p class="dev-skill__desc">Scripting, automation, data.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">&forall;</span>
+          <p class="dev-skill__name">Responsive Design</p>
+          <p class="dev-skill__desc">Mobile&#8209;first, fluid, accessible.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">fig</span>
+          <p class="dev-skill__name">Figma</p>
+          <p class="dev-skill__desc">Design-to-code handoff.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">ai</span>
+          <p class="dev-skill__name">Adobe Illustrator</p>
+          <p class="dev-skill__desc">Logos, vector art, branding assets.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">ps</span>
+          <p class="dev-skill__name">Photoshop</p>
+          <p class="dev-skill__desc">Visuals, assets, image prep.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">ae</span>
+          <p class="dev-skill__name">After Effects</p>
+          <p class="dev-skill__desc">Motion graphics for socials.</p>
+        </div>
+        <div class="dev-skill">
+          <span class="dev-skill__tag">cv</span>
+          <p class="dev-skill__name">Canva</p>
+          <p class="dev-skill__desc">Fast social &amp; campaign content.</p>
+        </div>
       </div>
 
-      <div class="skills__tools" aria-label="Software">
-        <img src="assets/logo-pp.png" alt="Adobe Photoshop" />
-        <img src="assets/logo-c.png" alt="Canva" />
-        <img src="assets/logo-ar.png" alt="Adobe After Effects" />
-        <img src="assets/logo-f.png" alt="Figma" />
-        <img src="assets/logo-ap.png" alt="Adobe Illustrator" />
-      </div>
-
-      <div class="skills__foot">
-        <span>Language: ENG) Advanced</span>
-      </div>
+      <p class="dev-skills__note">
+        <span class="dev-skills__note-arrow">&#8594;</span> Currently building responsive sites, component UI,
+        and translating design systems into production code.
+      </p>
     </section>
 
-    <!-- ============ PORTFOLIO / WORK ============ -->
-    <section class="portfolio" id="portfolio" data-reveal>
-      <header class="portfolio__head">
-        <span class="badge">PORTFOLIO</span>
-        <h2 class="portfolio__title">My Work <span class="portfolio__sub">(Just a few)</span></h2>
-        <svg class="portfolio__sparkle" viewBox="0 0 40 40" aria-hidden="true">
-          <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#ffe600"/>
-        </svg>
-</header>
+    <!-- ============ PROJECTS ============ -->
+    <section class="dev-section dev-projects" id="projects" data-reveal>
+      <span class="dev-section__eyebrow">04 · Projects</span>
+      <h2 class="dev-section__title">Selected work</h2>
+      <p class="dev-section__lead">A selected set of the sites and interfaces I design and build — from brand landing pages to design systems.</p>
 
-      <div class="portfolio__group">
-        <h3 class="portfolio__cat">Portfolio Designs</h3>
-        <ul class="portfolio__grid">
-          <li class="work-card work-card--fit" data-title="Portfolio 2025" data-cat="Portfolio Design">
-            <img src="assets/work/portfolio-design-artboard.jpg" alt="Portfolio 2025 design" loading="lazy" />
-          </li>
-          <li class="work-card work-card--fit" data-title="My CVD Resume" data-cat="Portfolio Design">
-            <img src="assets/work/portfolio-design-resume.jpg" alt="My CVD resume design" loading="lazy" />
-          </li>
-        </ul>
-      </div>
+      <div class="dev-projects__grid">
+        <article class="dev-project">
+          <div class="dev-project__mock">
+            <div class="dev-project__bar">
+              <i></i><i></i><i></i>
+              <span class="dev-project__url">maison-noire.example</span>
+            </div>
+            <div class="dev-project__screen dev-project__screen--fit">
+              <img src="img/projects/perfume-brand.png" alt="Maison Noir perfume brand website preview" loading="lazy" />
+            </div>
+          </div>
+          <div class="dev-project__body">
+            <h3 class="dev-project__title">Maison Noir &mdash; Perfume Brand</h3>
+            <p class="dev-project__desc">An elegant e-commerce landing page for a luxury perfume house &mdash; product story, scent notes, and a refined shopping moment.</p>
+            <div class="dev-project__chips">
+              <span class="dev-chip">HTML</span><span class="dev-chip">CSS</span><span class="dev-chip">JavaScript</span>
+            </div>
+          </div>
+        </article>
 
-      <div class="portfolio__group">
-<h3 class="portfolio__cat">Basic Designs</h3>
-        <ul class="portfolio__grid">
-          <li class="work-card" data-title="JCCI — TTA Offering" data-cat="Flyer Design">
-            <img src="assets/work/flyer-jcci-tta1.jpg" alt="JCCI TTA offering flyer design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="JCCI — TTA Offering 2" data-cat="Flyer Design">
-            <img src="assets/work/flyer-jcci-tta2.jpg" alt="JCCI TTA offering flyer design two" loading="lazy" />
-          </li>
-<li class="work-card" data-title="Press Pulse Flyer" data-cat="Flyer Design">
-            <img src="assets/work/flyer-press-pulse.jpg" alt="Press Pulse flyer design" loading="lazy" />
-          </li>
-        </ul>
-      </div>
+        <article class="dev-project">
+          <div class="dev-project__mock">
+            <div class="dev-project__bar">
+              <i></i><i></i><i></i>
+              <span class="dev-project__url">perrystreak.example</span>
+            </div>
+            <div class="dev-project__screen dev-project__screen--fit">
+              <img src="img/projects/clothing-brand.png" alt="Clothing brand website preview" loading="lazy" />
+            </div>
+          </div>
+          <div class="dev-project__body">
+            <h3 class="dev-project__title">Perrystreak &mdash; Clothing Brand</h3>
+            <p class="dev-project__desc">A responsive e-commerce storefront for a clothing business &mdash; collections, product pages, and a smooth shopping experience.</p>
+            <div class="dev-project__chips">
+              <span class="dev-chip">HTML</span><span class="dev-chip">CSS</span><span class="dev-chip">JavaScript</span>
+            </div>
+          </div>
+        </article>
 
-<div class="portfolio__group">
-        <h3 class="portfolio__cat">Artworks</h3>
-        <ul class="portfolio__grid">
-          <li class="work-card" data-title="Dance By Meddie" data-cat="Artwork">
-            <img src="assets/work/art-dance-meddie.jpg" alt="Dance By Meddie artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Baby Timi" data-cat="Artwork">
-            <img src="assets/work/art-baby-timi.jpg" alt="Baby Timi artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Midnight's Listening" data-cat="Artwork">
-            <img src="assets/work/art-midnight-listening.jpg" alt="Midnight's Listening artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Heart Talk" data-cat="Artwork">
-            <img src="assets/work/art-heart-talk.jpg" alt="Heart Talk artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Utopia" data-cat="Artwork">
-            <img src="assets/work/art-utopia.png" alt="Utopia artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Cyberpunk Red" data-cat="Artwork">
-            <img src="assets/work/art-cyberpunk-red.jpg" alt="Cyberpunk red artwork" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Meddie's Cover" data-cat="Artwork">
-            <img src="assets/work/art-meddie-cover.jpg" alt="Meddie's Cover artwork" loading="lazy" />
-          </li>
-        </ul>
-      </div>
+        <article class="dev-project">
+          <div class="dev-project__mock">
+            <div class="dev-project__bar">
+              <i></i><i></i><i></i>
+              <span class="dev-project__url">flygerian-universe.example</span>
+            </div>
+            <div class="dev-project__screen dev-project__screen--fit">
+              <img src="img/projects/fashion-brand.png" alt="FLYGERIAN UNIVERSE fashion brand website preview" loading="lazy" />
+            </div>
+          </div>
+          <div class="dev-project__body">
+            <h3 class="dev-project__title">FLYGERIAN UNIVERSE &mdash; Fashion Brand</h3>
+            <p class="dev-project__desc">An editorial fashion storefront &mdash; lookbook-led collections, product highlights, and a refined browsing flow.</p>
+            <div class="dev-project__chips">
+              <span class="dev-chip">HTML</span><span class="dev-chip">CSS</span><span class="dev-chip">JavaScript</span>
+            </div>
+          </div>
+        </article>
 
-      <div class="portfolio__group">
-        <h3 class="portfolio__cat">Logos</h3>
-        <ul class="portfolio__grid">
-          <li class="work-card" data-title="Claude Logo Design" data-cat="Logo & Branding">
-            <img src="assets/work/logo-claude.jpg" alt="Claude logo design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Logo Design" data-cat="Logo & Branding">
-            <img src="assets/work/logo-design.png" alt="Logo design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Perry's Graphics Logo" data-cat="Logo & Branding">
-            <img src="assets/work/logo-perrys-graphics.png" alt="Perry's Graphics logo design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="New Earth Logo" data-cat="Logo & Branding">
-            <img src="assets/work/logo-new-earth.jpg" alt="New Earth logo design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="J Haven Logo" data-cat="Logo & Branding">
-            <img src="assets/work/logo-jhaven.jpg" alt="J Haven blue and silver logo design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="HH Profile Photo" data-cat="Logo & Branding">
-            <img src="assets/work/logo-hh-profile.jpg" alt="HH profile photo logo design" loading="lazy" />
-          </li>
-        </ul>
-      </div>
+        <article class="dev-project">
+          <div class="dev-project__mock">
+            <div class="dev-project__bar">
+              <i></i><i></i><i></i>
+              <span class="dev-project__url">timilehin.dev</span>
+            </div>
+            <div class="dev-project__screen dev-project__screen--fit">
+              <img src="img/projects/portfolio-resume.png" alt="Portfolio and resume site preview" loading="lazy" />
+            </div>
+          </div>
+          <div class="dev-project__body">
+            <h3 class="dev-project__title">Portfolio &amp; R&eacute;sum&eacute; Site</h3>
+            <p class="dev-project__desc">Multi&#8209;page portfolio with scroll reveals, responsive layout, and an image lightbox.</p>
+            <div class="dev-project__chips">
+              <span class="dev-chip">HTML</span><span class="dev-chip">CSS</span><span class="dev-chip">JavaScript</span>
+            </div>
+          </div>
+        </article>
 
-      <div class="portfolio__group">
-        <h3 class="portfolio__cat">Event Design</h3>
-<ul class="portfolio__grid">
-          <li class="work-card" data-title="Student Week — Coming Soon" data-cat="Event Design">
-            <img src="assets/work/event-studentweek-soon.jpg" alt="Student Week coming soon design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Student Week" data-cat="Event Design">
-            <img src="assets/work/event-studentweek.jpg" alt="Student Week design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Student Week First Cover" data-cat="Event Design">
-            <img src="assets/work/event-studentweek-cover.jpg" alt="Student Week first cover design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="NIJ SL Banner" data-cat="Event Design">
-            <img src="assets/work/event-nij-sl-banner.jpg" alt="NIJ SL banner design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="NIJCSF" data-cat="Event Design">
-            <img src="assets/work/event-nijcsf.jpg" alt="NIJCSF design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Provost Cup Final" data-cat="Event Design">
-            <img src="assets/work/event-provost-cup.jpg" alt="Provost Cup Final design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Retro Rewind — Wave" data-cat="Event Design">
-            <img src="assets/work/event-retro-wave.jpg" alt="Retro Rewind wave flyer design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Retro Rewind Flyer" data-cat="Event Design">
-            <img src="assets/work/event-retro-fp.jpg" alt="Retro Rewind flyer design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Retro Rewind — Brace Up" data-cat="Event Design">
-            <img src="assets/work/event-retro-brace-up.jpg" alt="Retro Rewind brace up flyer design" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Retro Rewind — Loud Am" data-cat="Event Design">
-            <img src="assets/work/event-retro-loud-am.jpg" alt="Retro Rewind loud am flyer design" loading="lazy" />
-          </li>
-        </ul>
-      </div>
+        <article class="dev-project">
+          <div class="dev-project__mock">
+            <div class="dev-project__bar">
+              <i></i><i></i><i></i>
+              <span class="dev-project__url">brand-landing.page</span>
+            </div>
+            <div class="dev-project__screen dev-project__screen--grad2">
+              <img src="img/projects/brand-landing.png" alt="Brand landing page preview" loading="lazy" />
+            </div>
+          </div>
+          <div class="dev-project__body">
+            <h3 class="dev-project__title">Brand Landing Page</h3>
+            <p class="dev-project__desc">A modern, conversion&#8209;focused landing page with a strong hero and clear calls to action.</p>
+            <div class="dev-project__chips">
+              <span class="dev-chip">HTML</span><span class="dev-chip">CSS</span><span class="dev-chip">Responsive</span>
+            </div>
+          </div>
+        </article>
 
-      <div class="portfolio__group">
-        <h3 class="portfolio__cat">Social Media Branding &amp; Campaign</h3>
-<ul class="portfolio__grid">
-          <li class="work-card" data-title="PROVAMATI July Campaign 1" data-cat="Brand Campaign">
-            <img src="assets/work/brand-provamati-july1.jpg" alt="PROVAMATI July campaign design 1" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="PROVAMATI Campaign" data-cat="Brand Campaign">
-            <img src="assets/work/brand-provamati.jpg" alt="PROVAMATI brand campaign design" loading="lazy" />
-          </li>
-<li class="work-card" data-title="PROVAMATI July Campaign 2" data-cat="Brand Campaign">
-            <img src="assets/work/brand-provamati-july2.jpg" alt="PROVAMATI July campaign design 2" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Symptoms Cover" data-cat="Print / Packaging">
-            <img src="assets/work/brand-provamati-cover.jpg" alt="PROVAMATI Fibroid Symptoms cover design" loading="lazy" />
-          </li>
-        </ul>
-      </div>
-
-      <section class="carousel portfolio carousel--portrait" id="carousel-fibroid" data-reveal>
-        <ul class="carousel__grid">
-          <li class="work-card" data-title="Fibroid Awareness 1" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-01.jpg" alt="Fibroid awareness month slide 1" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 2" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-02.jpg" alt="Fibroid awareness month slide 2" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 3" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-03.jpg" alt="Fibroid awareness month slide 3" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 4" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-04.jpg" alt="Fibroid awareness month slide 4" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 5" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-05.jpg" alt="Fibroid awareness month slide 5" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 6" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-06.jpg" alt="Fibroid awareness month slide 6" loading="lazy" />
-          </li>
-          <li class="work-card" data-title="Fibroid Awareness 7" data-cat="Brand Campaign">
-            <img src="assets/work/social-fibroid-07.jpg" alt="Fibroid awareness month slide 7" loading="lazy" />
-          </li>
-        </ul>
-      </section>
-    </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox__close" aria-label="Close">&times;</button>
-      <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">&larr;</button>
-      <figure class="lightbox__figure">
-        <img class="lightbox__img" src="" alt="" />
-        <figcaption class="lightbox__caption"></figcaption>
-      </figure>
-      <button class="lightbox__nav lightbox__nav--next" aria-label="Next">&rarr;</button>
-    </div>
-
-    <!-- ============ BRAND CAMPAIGN (CAROUSEL) ============ -->
-    <section class="carousel portfolio" id="carousel" data-reveal>
-      <header class="portfolio__head">
-        <span class="badge">BRAND CAMPAIGN</span>
-        <h2 class="portfolio__title portfolio__title--gasdrifo">Sweet Treats by Els</h2>
-        <svg class="portfolio__sparkle" viewBox="0 0 40 40" aria-hidden="true">
-          <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#ffe600"/>
-        </svg>
-      </header>
-
-      <ul class="carousel__grid">
-        <li class="work-card" data-title="Sweet Treats Carousel 1" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-01.jpg" alt="Sweet Treats campaign slide 1" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 2" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-02.jpg" alt="Sweet Treats campaign slide 2" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 3" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-03.jpg" alt="Sweet Treats campaign slide 3" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 4" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-04.jpg" alt="Sweet Treats campaign slide 4" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 5" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-05.jpg" alt="Sweet Treats campaign slide 5" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 6" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-06.jpg" alt="Sweet Treats campaign slide 6" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 7" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-07.jpg" alt="Sweet Treats campaign slide 7" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 8" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-08.jpg" alt="Sweet Treats campaign slide 8" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 9" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-09.jpg" alt="Sweet Treats campaign slide 9" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 10" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-10.jpg" alt="Sweet Treats campaign slide 10" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Sweet Treats Carousel 11" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-sweets-11.jpg" alt="Sweet Treats campaign slide 11" loading="lazy" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- ============ BRAND CAMPAIGN (CAROUSEL): SKYULT ============ -->
-    <section class="carousel portfolio carousel--2" id="carousel-skyult" data-reveal>
-      <header class="portfolio__head">
-        <span class="badge">BRAND CAMPAIGN</span>
-        <h2 class="portfolio__title portfolio__title--gasdrifo">Skyult Wine</h2>
-        <svg class="portfolio__sparkle" viewBox="0 0 40 40" aria-hidden="true">
-          <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#ffe600"/>
-        </svg>
-      </header>
-
-      <ul class="carousel__grid">
-        <li class="work-card" data-title="Skyult Wine 1" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-01.jpg" alt="Skyult Wine slide 1" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 2" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-02.jpg" alt="Skyult Wine slide 2" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 3" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-03.jpg" alt="Skyult Wine slide 3" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 4" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-04.jpg" alt="Skyult Wine slide 4" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 5" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-05.jpg" alt="Skyult Wine slide 5" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 6" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-06.jpg" alt="Skyult Wine slide 6" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 7" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-07.jpg" alt="Skyult Wine slide 7" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 8" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-08.jpg" alt="Skyult Wine slide 8" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 9" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-09.jpg" alt="Skyult Wine slide 9" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 10" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-10.jpg" alt="Skyult Wine slide 10" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 11" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-11.jpg" alt="Skyult Wine slide 11" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 12" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-12.jpg" alt="Skyult Wine slide 12" loading="lazy" />
-        </li>
-        <li class="work-card" data-title="Skyult Wine 13" data-cat="Brand Campaign Design">
-          <img src="assets/work/carousel-skyult-13.jpg" alt="Skyult Wine slide 13" loading="lazy" />
-        </li>
-      </ul>
+        </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="contact" id="contact" data-reveal>
-      <header class="portfolio__head">
-        <span class="badge">CONTACT</span>
-        <h2 class="portfolio__title">Let&apos;s Talk</h2>
-        <svg class="portfolio__sparkle" viewBox="0 0 40 40" aria-hidden="true">
-          <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#ffe600"/>
-        </svg>
-      </header>
+    <section class="dev-section" id="contact" data-reveal>
+      <span class="dev-section__eyebrow">05 · Contact</span>
+      <h2 class="dev-section__title">Let&rsquo;s build something together</h2>
+      <p class="dev-section__lead">Got a project, a role, or an idea? Reach me through any of these.</p>
 
-      <div class="contact__inner">
-        <p class="contact__lead">
-          Got a project, an idea, or just want to say hello? Reach me through any of these.
-        </p>
+      <div class="dev-contact__grid">
+        <a class="dev-contact-card" href="mailto:perryakindipetimilehin@gmail.com">
+          <span class="dev-contact-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+          </span>
+          <span class="dev-contact-card__label">Email</span>
+          <span class="dev-contact-card__value">perryakindipetimilehin@gmail.com</span>
+        </a>
 
-        <ul class="contact__list">
-          <li>
-            <a class="contact__item" href="mailto:perryakindipetimilehin@gmail.com">
-              <svg class="contact__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
-              <span class="contact__wrap">
-                <span class="contact__label">Email</span>
-                <span class="contact__value">perryakindipetimilehin@gmail.com</span>
-              </span>
-            </a>
-          </li>
+        <a class="dev-contact-card" href="tel:+2349049714495">
+          <span class="dev-contact-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
+          </span>
+          <span class="dev-contact-card__label">Phone</span>
+          <span class="dev-contact-card__value">+234 904 971 4495</span>
+        </a>
 
-          <li>
-            <a class="contact__item" href="tel:+2349049714495">
-              <svg class="contact__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
-              <span class="contact__wrap">
-                <span class="contact__label">Phone</span>
-                <span class="contact__value">+234 904 971 4495</span>
-              </span>
-            </a>
-          </li>
+        <a class="dev-contact-card" href="https://wa.me/2349049714495" target="_blank" rel="noopener">
+          <span class="dev-contact-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.8-4.3-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.5.6c-.1.1-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.1.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
+          </span>
+          <span class="dev-contact-card__label">WhatsApp</span>
+          <span class="dev-contact-card__value">Chat on WhatsApp</span>
+        </a>
 
-          <li>
-            <a class="contact__item" href="https://wa.me/2349049714495" target="_blank" rel="noopener">
-              <svg class="contact__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.8-4.3-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5l.9 2.2c.1.2.1.4 0 .6l-.4.6-.5.6c-.1.1-.3.3-.1.6.2.3.9 1.4 1.9 2.3 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.1.5.2.6.4.1.1.1.7-.1 1.3z"/></svg>
-              <span class="contact__wrap">
-                <span class="contact__label">WhatsApp</span>
-                <span class="contact__value">Chat on WhatsApp</span>
-              </span>
-            </a>
-          </li>
-
-          <li>
-            <a class="contact__item" href="https://www.behance.net/timilehperrya" target="_blank" rel="noopener">
-              <span class="contact__be" aria-hidden="true">Be</span>
-              <span class="contact__wrap">
-                <span class="contact__label">Behance</span>
-                <span class="contact__value">View my portfolio</span>
-              </span>
-            </a>
-          </li>
-        </ul>
+        <a class="dev-contact-card" href="https://www.behance.net/timilehperrya" target="_blank" rel="noopener">
+          <span class="dev-contact-card__icon dev-contact-card__icon--be">Be</span>
+          <span class="dev-contact-card__label">Behance</span>
+          <span class="dev-contact-card__value">View my portfolio</span>
+        </a>
       </div>
+
+      <p class="dev-contact__cta">
+        <span class="dev-contact__cta-note">Prefer my creative design work? <a href="welcome.html">View the creative portfolio &nearr;</a></span>
+      </p>
     </section>
+  </main>
 
-    <!-- ============ SMILEY STICKER ============ -->
-    <div class="smiley" aria-hidden="true">
-      <svg viewBox="0 0 120 120">
-        <defs>
-          <radialGradient id="smileGrad" cx="30%" cy="30%" r="80%">
-            <stop offset="0%" stop-color="#ffe600"/>
-            <stop offset="35%" stop-color="#ff5e9c"/>
-            <stop offset="70%" stop-color="#7b5cff"/>
-            <stop offset="100%" stop-color="#00e5ff"/>
-          </radialGradient>
-        </defs>
-        <circle cx="60" cy="60" r="58" fill="url(#smileGrad)"/>
-        <path d="M40 42 l6 6 6-6 -6-6z" fill="#0b0b0b"/>
-        <path d="M68 42 l6 6 6-6 -6-6z" fill="#0b0b0b"/>
-        <path d="M40 74 q20 20 40 0" fill="none" stroke="#0b0b0b" stroke-width="5" stroke-linecap="round"/>
-      </svg>
+  <!-- ============ FOOTER ============ -->
+  <footer class="dev-footer">
+    <div class="dev-footer__inner">
+      <p class="dev-footer__mono">&copy; <span id="footer-year">2026</span> Timilehin Akindipe &mdash; Front&#8209;End Developer &amp; Designer.</p>
+      <p>Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="dev-footer__links">
+        <a href="mailto:perryakindipetimilehin@gmail.com">Email</a>
+        <a class="dev-footer__creative" href="welcome.html">Creative Portfolio</a>
+      </div>
     </div>
+  </footer>
 
-    <!-- ============ DECORATIVE WHITE LINE WORK ============ -->
-    <svg class="deco-lines" viewBox="0 0 1000 1400" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M60 320 C 20 380, 30 440, 70 470" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M700 100 l14 14 m0-14 l-14 14" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="930" cy="640" r="14" fill="none" stroke="#fff" stroke-width="2.5"/>
-      <path d="M916 640h28 M930 626v28" stroke="#fff" stroke-width="2.5"/>
-      <path d="M170 1180 c40-30 80-10 90 30" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M250 1200 l14 12 -18 8" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M480 60 l10 18 18 10 -18 10 -10 18 -10-18 -18-10 18-10z" fill="none" stroke="#fff" stroke-width="2"/>
-    </svg>
+  <script>
+    (function () {
+      "use strict";
+      document.documentElement.classList.add("js");
 
-    <div class="sticker sticker--corner" aria-hidden="true">★</div>
+      var nav = document.getElementById("devNav");
+      var navToggle = document.getElementById("devNavToggle");
+      var navMenu = document.getElementById("devNavMenu");
 
-    <!-- ============ FOOTER ============ -->
-    <footer class="site-footer">
-      <p>&copy; <span id="footer-year">2026</span> Timi. All Rights Reserved.</p>
-    </footer>
-  </div>
+      function closeNav() {
+        nav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
 
-<script src="js/main.js"></script>
+      navToggle.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      navMenu.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") closeNav();
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!nav.classList.contains("is-open")) return;
+        if (!nav.contains(e.target)) closeNav();
+      });
+
+      document.getElementById("footer-year").textContent = String(new Date().getFullYear());
+
+      var revealEls = document.querySelectorAll("[data-reveal]");
+      if (!("IntersectionObserver" in window)) {
+        revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
+      );
+      revealEls.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
 </body>
 </html>
-
-
