@@ -1,0 +1,348 @@
+/* ============================================================
+   Overall poster composition (3-column editorial grid)
+   ============================================================ */
+
+.poster {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.9fr) 1.1fr minmax(220px, 0.85fr);
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  gap: clamp(24px, 3vw, 34px) clamp(16px, 2.6vw, 30px);
+}
+
+/* ---------- Hero title: spans all columns ---------- */
+.hero {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 10px 0 26px;
+  z-index: 3;
+}
+
+/* ---------- Left "NEW" graphic ---------- */
+.new-graphic {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  align-self: start;
+  z-index: 2;
+}
+
+/* ---------- Profile card ---------- */
+.profile-card {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------- Tool strip ---------- */
+.tool-strip {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: start;
+  z-index: 5;
+}
+
+/* ---------- Education ticket ---------- */
+.ticket {
+  grid-column: 1;
+  grid-row: 3 / 4;
+  align-self: start;
+  z-index: 3;
+}
+
+/* ---------- Tape strips (decorative) ---------- */
+.tape {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ---------- Intro / experience panel ---------- */
+.exp-panel {
+  grid-column: 2 / 4;
+  grid-row: 4;
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------- Skills panel ---------- */
+.skills {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------- Portfolio ---------- */
+.portfolio {
+  grid-column: 1 / -1;
+  grid-row: 6;
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------- Brand Campaign Carousel ---------- */
+.carousel {
+  grid-column: 1 / -1;
+  grid-row: 8;
+  position: relative;
+  z-index: 4;
+}
+
+.carousel--2 {
+  grid-row: 7;
+}
+
+/* ---------- Contact ---------- */
+.contact {
+  grid-column: 1 / -1;
+  grid-row: 9;
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  grid-column: 1 / -1;
+  grid-row: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 12px 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  z-index: 4;
+}
+
+.site-footer p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* ---------- Decorative ---------- */
+.smiley {
+  position: absolute;
+  z-index: 5;
+}
+
+.deco-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------- Individual decorative positioning ---------- */
+
+.hero__sparkle {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
+.hero__sparkle.sparkle--a {
+  right: 8%;
+  top: 6px;
+  transform: rotate(18deg);
+}
+
+.hero__sparkle.sparkle--b {
+  left: 10%;
+  top: -6px;
+  transform: rotate(-14deg);
+  width: 22px;
+  height: 22px;
+}
+
+.new-graphic__arrow {
+  position: absolute;
+  right: -74px;
+  top: 40%;
+  width: 220px;
+  height: 160px;
+  transform: rotate(-6deg);
+  z-index: 2;
+}
+
+.sticker--hi {
+  position: absolute;
+  top: -32px;
+  left: 26%;
+  z-index: 6;
+}
+
+.barcode--profile {
+  position: absolute;
+  top: -40px;
+  right: 28px;
+  z-index: 6;
+}
+
+.tape--skills {
+  left: 150px;
+  bottom: -30px;
+  width: 560px;
+  transform: rotate(-3deg);
+}
+
+.tape--side {
+  left: -120px;
+  top: 520px;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.skills__badges {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.skills__badge {
+  display: grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  font-family: var(--font-accent);
+  font-size: 26px;
+  font-style: italic;
+  color: var(--paper);
+}
+
+.skills__tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 12px 20px;
+  border-left: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.skills__tools img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.skills__word {
+  text-align: center;
+  margin-top: 10px;
+  font-family: var(--font-accent);
+  font-size: 64px;
+  font-style: italic;
+  line-height: 1;
+  color: var(--paper);
+  letter-spacing: -1px;
+}
+
+.skills__word sup {
+  font-size: 26px;
+  top: -1.2em;
+}
+
+.smiley {
+  right: 6%;
+  bottom: 6%;
+  width: 120px;
+  height: 120px;
+}
+
+.sticker--corner {
+  position: absolute;
+  right: 2%;
+  top: 42%;
+  z-index: 6;
+}
+
+/* ---------- Responsive cascade ---------- */
+
+@media (max-width: 1080px) {
+  .tape--skills {
+    left: 60px;
+    width: 60%;
+  }
+
+  .tape--side {
+    left: -90px;
+  }
+
+  .new-graphic__arrow {
+    right: -46px;
+  }
+}
+
+@media (max-width: 940px) {
+  .poster {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    gap: 28px;
+  }
+
+  .poster > * {
+    min-width: 0;
+  }
+
+  .hero,
+  .new-graphic,
+  .profile-card,
+  .tool-strip,
+  .ticket,
+  .exp-panel,
+  .skills,
+  .portfolio,
+  .carousel,
+  .contact,
+  .site-footer {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .new-graphic__arrow {
+    display: none;
+  }
+
+  .barcode--profile {
+    top: -26px;
+    right: 10px;
+  }
+
+  .smiley {
+    right: 4%;
+    bottom: 3%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .tape--side {
+    display: none;
+  }
+
+  .tape--skills {
+    left: 20px;
+    width: 80%;
+  }
+
+  .new-graphic__shape {
+    width: 110px;
+    height: 290px;
+    gap: 26px;
+  }
+
+  .new-graphic__shape span {
+    font-size: 28px;
+  }
+}

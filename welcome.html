@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome · Timilehin Akindipe</title>
+  <meta name="description" content="Welcome to the world of Timilehin Akindipe, Creative Visual Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Space+Grotesk:ital,wght@0,400;0,500;0,700;1,700&family=Archivo:ital,wght@0,600;0,800;1,800&family=Iceberg&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/welcome.css" />
+</head>
+<body class="welcome-body">
+
+  <div class="welcome" id="welcome">
+
+    <!-- ============ DECOR ============ -->
+    <svg class="welcome__lines" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M60 140 C 20 200, 30 260, 70 290" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="930" cy="180" r="14" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <path d="M916 180h28 M930 166v28" stroke="#fff" stroke-width="2.5"/>
+      <path d="M480 60 520 90 470 130" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M120 560 c40-30 80-10 90 30" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="welcome__spark welcome__spark--a" viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/>
+    </svg>
+    <svg class="welcome__spark welcome__spark--b" viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/>
+    </svg>
+
+    <div class="barcode welcome__barcode" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="welcome__sticker" aria-hidden="true">Hi!</div>
+
+    <div class="welcome__smiley" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <radialGradient id="welcomeSmile" cx="30%" cy="30%" r="80%">
+            <stop offset="0%" stop-color="#ffe600"/>
+            <stop offset="35%" stop-color="#ff5e9c"/>
+            <stop offset="70%" stop-color="#7b5cff"/>
+            <stop offset="100%" stop-color="#00e5ff"/>
+          </radialGradient>
+        </defs>
+        <circle cx="60" cy="60" r="58" fill="url(#welcomeSmile)"/>
+        <path d="M40 42 l6 6 6-6 -6-6z" fill="#0b0b0b"/>
+        <path d="M68 42 l6 6 6-6 -6-6z" fill="#0b0b0b"/>
+        <path d="M40 74 q20 20 40 0" fill="none" stroke="#0b0b0b" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- ============ CENTER STAGE ============ -->
+    <div class="welcome__stage">
+      <p class="welcome__script">hi there, I am Timi</p>
+
+      <h1 class="welcome__title" aria-label="Welcome">
+        <span class="welcome__letter">W</span><span class="welcome__letter">E</span><span class="welcome__letter">L</span><span class="welcome__letter">C</span><span class="welcome__letter">O</span><span class="welcome__letter">M</span><span class="welcome__letter">E</span><span class="welcome__letter">!</span>
+      </h1>
+
+      <p class="welcome__sub">this is my profile as a</p>
+      <p class="welcome__role">CREATIVE VISUAL DESIGNER</p>
+
+      <a class="welcome__enter" href="index.html">
+        <span class="welcome__enter-label">Enter</span>
+        <svg class="welcome__enter-arrow" viewBox="0 0 220 160" aria-hidden="true">
+          <path d="M10 140 C 60 150, 130 130, 170 60" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M150 70 L172 52 L176 82" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <a class="welcome__dev" href="developer.html">navigate to my front-end developer portfolio&nbsp;&nearr;</a>
+    </div>
+
+    <span class="welcome__foot">&copy; <span id="footer-year">2026</span> Timi. All Rights Reserved.</span>
+  </div>
+
+  <script>
+    document.getElementById("footer-year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Vielotta";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Vielotta-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Peinture Fraiche";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/peinture-fraiche.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lorine";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Lorine-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Amsterdam";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Amsterdam.woff2") format("woff2"),
+    url("../fonts/Amsterdam.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Garne";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Garne.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baftiva";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Baftiva.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Priestacy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Priestacy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gasdrifo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Gasdrifo.woff2") format("woff2"),
+    url("../fonts/Gasdrifo.woff") format("woff");
+}
+
+:root {
+  --black: #0b0b0b;
+  --charcoal: #161616;
+  --ink: #141414;
+  --paper: #f4f4f3;
+  --paper-soft: #ececea;
+  --yellow: #ffe600;
+  --yellow-deep: #ffd400;
+  --white: #ffffff;
+
+  --grad-new:
+    linear-gradient(
+      160deg,
+      #ff5e9c 0%,
+      #ffe600 18%,
+      #00e5ff 40%,
+      #7b5cff 62%,
+      #00c48c 82%,
+      #ff5e9c 100%
+    );
+
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-caps: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Space Grotesk", "Helvetica Neue", sans-serif;
+  --font-accent: "Archivo", "Impact", sans-serif;
+
+  --radius-card: 22px;
+  --radius-soft: 14px;
+
+  --shadow-card: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
