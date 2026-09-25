@@ -1552,3 +1552,140 @@
     padding: 14px 16px;
   }
 }
+
+/* ============================================================
+   MOBILE POLISH (creative page)
+   ============================================================ */
+
+@media (max-width: 560px) {
+  body {
+    padding-top: 72px;
+  }
+
+  .poster {
+    padding: 18px 14px 56px;
+    gap: 22px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 4px;
+    padding: 2px 0 10px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    white-space: normal;
+    transform: rotate(-0.8deg);
+  }
+
+  .hero__my {
+    font-size: 27px;
+  }
+
+  .profile-card__photo {
+    min-height: 200px;
+  }
+
+  .profile-card__info {
+    padding: 18px 16px;
+    gap: 10px;
+  }
+
+  .profile-card__brand {
+    font-size: 24px;
+  }
+
+  .tool-strip {
+    gap: 10px;
+    padding: 10px 8px;
+  }
+
+  .tool {
+    width: 44px;
+    height: 44px;
+  }
+
+  .skills {
+    padding: 22px 16px 40px;
+    gap: 22px;
+  }
+
+  .skills__word {
+    font-size: 44px;
+  }
+
+  .portfolio__head {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio__title {
+    font-size: 34px;
+  }
+
+  .portfolio__group {
+    margin-bottom: 26px;
+  }
+
+  .portfolio__cat {
+    font-size: 15px;
+    padding: 3px 14px;
+    margin-bottom: 12px;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .carousel__grid {
+    grid-auto-columns: 75vw;
+    gap: 14px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px 2px 12px 2px;
+  }
+
+  .carousel__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel__grid .work-card {
+    scroll-snap-stop: always;
+  }
+
+  .carousel--portrait .carousel__grid {
+    grid-auto-columns: 74vw;
+  }
+
+  .lightbox {
+    padding: 72px 10px 20px;
+  }
+
+  .lightbox__img {
+    max-height: calc(100dvh - 150px);
+    border-radius: 8px;
+  }
+
+  .lightbox__caption {
+    font-size: 15px;
+  }
+
+  .lightbox__close {
+    top: 16px;
+    right: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio__title {
+    font-size: 30px;
+  }
+
+  .lightbox__img {
+    max-height: calc(100dvh - 140px);
+  }
+}
